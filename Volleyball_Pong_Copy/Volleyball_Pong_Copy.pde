@@ -8,8 +8,12 @@ void setup() {
 }
 
 void  draw() {
+  if(location.y > height){
+  gameOver();
+  }
   GUI_Starting();
   ball_movment();
+  gameOver();
   }
   
 void keyPressed () {
